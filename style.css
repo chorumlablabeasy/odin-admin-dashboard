@@ -185,6 +185,7 @@ svg path {
 }
 /* sidebar end */
 
+/* main content start*/
 .main-content {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
@@ -194,10 +195,55 @@ svg path {
     gap: 2rem;
 }
 
+/* project section start*/
 .projects-section {
+    padding: 2rem 2rem;
     grid-column: 1 / 3;
     grid-row: 1 / 4;
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    height: 90%;
+    width: 90%;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 2rem 3rem;
+    background: linear-gradient(to right, var(--clr-yellow) 2%, var(--clr-white) 2%);
+    border-radius: 10px;
+}
+
+.card-icons {
+    align-self: flex-end;
+}
+
+.card-icons svg {
+    margin: 0 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.card-text {
+    color: grey;
+    font-size: 1.5rem;
+}
+/* project section end*/
 
 .info-panel {
     grid-column: 3 / 4;
@@ -215,3 +261,4 @@ svg path {
 .trending {
     grid-area: 2 / 1 / 3 / 2;
 }
+/* main content end*/
