@@ -30,6 +30,13 @@ body {
     background-color: var(--clr-color-background);
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background-color: grey;
+    margin: 0.6rem 0;
+}
+
 .svg {
     height: 3rem;
     width: 3rem;
@@ -76,6 +83,7 @@ svg path {
     grid-row: 1 / 2;
     background-color: var(--clr-white);
     padding-top: 1rem;
+    box-shadow: var(--box-shadow);
 }
 
 .header-top {
@@ -218,6 +226,7 @@ svg path {
     padding: 2rem 3rem;
     background: linear-gradient(to right, var(--clr-yellow) 2%, var(--clr-white) 2%);
     border-radius: 10px;
+    box-shadow: var(--box-shadow);
 }
 
 .card-icons {
@@ -252,6 +261,7 @@ h3 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2rem;
+    padding: 3rem 3rem 5rem 0;
 }
 
 .announcements {
@@ -260,5 +270,46 @@ h3 {
 
 .trending {
     grid-area: 2 / 1 / 3 / 2;
+}
+
+.white-box {
+    background-color: var(--clr-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    height: 90%;
+    padding: 2.4rem;
+}
+
+.announcements-text {
+    height: 30%;
+}
+
+.announcements-text p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 3;
+    overflow: hidden;
+    max-width: 90%;
+    line-height: 1.5;
+    color: grey;
+}
+
+.trending-box {
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.trending-box p:first-of-type {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.trending-box p:nth-of-type(2) {
+    font-size: 1.6rem;
+    color: grey;
 }
 /* main content end*/
